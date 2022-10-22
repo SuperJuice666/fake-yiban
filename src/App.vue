@@ -119,10 +119,6 @@
             :items='items' :approvers="approvers" :ccs="ccs" @exit='page=0'></fake>
         <QRCode v-if='page == 2' @exit='page=0'></QRCode>
         <div class='about' v-if='page == -1'>
-            <img src='./assets/logo.png'>
-            <h2>Fake Yiban 0.2.3 (Alpha)</h2>
-            <p>By <a href='https://github.com/supertsy5/'>SUPERTSY5</a></p>
-            <p>警告：本程序仅供演示，请勿滥用。一切后果自负。</p>
         </div>
     </div>
 </template>
@@ -149,14 +145,6 @@ export default {
                 {
                     name: "是否离校",
                     value: "是"
-                },
-                {
-                    name: "是否离开沈阳",
-                    value: "否"
-                },
-                {
-                    name: "是否离开辽宁省",
-                    value: "否"
                 },
                 {
                     name: "前往省份、城市",
