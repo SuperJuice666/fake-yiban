@@ -135,12 +135,12 @@ export default {
     data(){
         return {
             page: 0,
-            studentName: 'Example',
-            studentID: '1234567890',
+            studentName: '田所浩二',
+            studentID: '1145141919',
             items: [
                 {
                     name: "审批编号",
-                    value: "20210101080000123456"
+                    value: "20220101080000114514"
                 },
                 {
                     name: "是否离校",
@@ -152,11 +152,11 @@ export default {
                 },
                 {
                     name: "开始时间",
-                    value: "2021-01-01 08:00"
+                    value: "2022-10-22 08:00"
                 },
                 {
                     name: "结束时间",
-                    value: "2021-01-02 08:00"
+                    value: "2022-10-23 08:00"
                 },
                 {
                     name: "时长",

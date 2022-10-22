@@ -55,7 +55,7 @@
                                             <div>
                                                 <div>{{approver.name}}({{approver.id}})<span class="workTime___PJH95">{{approver.time}}</span></div>
                                                 <div class="approverOpinion___3xcsE"><span
-                                                        style="color: rgb(135, 208, 104);">已同意</span></div>
+                                                        style="color: rgb(135, 208, 104);">已同意</span><span>(文本测试)</span></div>
                                             </div>
                                         </div>
                                     </div>
