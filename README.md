@@ -1,6 +1,6 @@
 # Fake Yiban: 不一般的易班
 
-# [Start](https://lingluoluo.github.io/fake-yiban/dist/)
+# [Start](https://superjuice666.github.io/fake-yiban/dist/)
 
 WARNING: This program is only used for demonstration and should not be abused. Use it at your own risk.
 

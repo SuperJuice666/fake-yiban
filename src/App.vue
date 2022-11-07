@@ -126,6 +126,23 @@
 <script>
 import Fake from './components/fake/Fake.vue'
 import QRCode from './components/fake/QRCode.vue'
+import dayjs from 'dayjs'
+
+function random(len) {
+  var str = "";
+  for (var idx = 0; idx < len; idx++) {
+    str = str + Math.floor(Math.random() * 10);
+  }
+  return str;
+}
+
+function randomPhone() {
+  var prefixArray = new Array("130", "131", "132", "133", "135", "137", "138", "170", "187", "189");
+  var i = parseInt(10 * Math.random());
+  var prefix = prefixArray[i] + random(8);
+  return prefix
+}
+
 export default {
     name: 'App',
     components: {
@@ -136,31 +153,27 @@ export default {
         return {
             page: 0,
             studentName: '田所浩二',
-            studentID: '1145141919',
+            studentID: dayjs().add(-1, 'year').format('YYYY').replace(/[^0-9]/ig, "") + random(8),
             items: [
                 {
                     name: "审批编号",
-                    value: "20220101080000114514"
+                    value: dayjs().format('YYYY-MM-DD 07:55').replace(/[^0-9]/ig, "") + random(8)
                 },
                 {
                     name: "是否离校",
                     value: "是"
                 },
                 {
-                    name: "前往省份、城市",
-                    value: ""
-                },
-                {
                     name: "开始时间",
-                    value: "2022-10-22 08:00"
+                    value: dayjs().format('YYYY-MM-DD 08:00')
                 },
                 {
                     name: "结束时间",
-                    value: "2022-10-23 08:00"
+                    value: dayjs().format('YYYY-MM-DD 20:00')
                 },
                 {
-                    name: "时长",
-                    value: "24"
+                    name: "时长(天)",
+                    value: "0.5"
                 },
                 {
                     name: "请假类型",
@@ -168,7 +181,7 @@ export default {
                 },
                 {
                     name: "本人联系电话",
-                    value: ""
+                    value: randomPhone()
                 },
                 {
                     name: "紧急联系人",
@@ -176,14 +189,18 @@ export default {
                 },
                 {
                     name: "紧急联系电话",
-                    value: ""
+                    value: randomPhone()
                 },
                 {
                     name: "请假原因",
                     value: ""
                 }
             ],
-            approvers: [],
+            approvers: [{
+              name: "",
+              id: '10'+random(4),
+              time: dayjs().format('YYYY-MM-DD 07:55')
+            }],
             ccs: [],
             deletingItem: -1,
             deletingApprover: -1,

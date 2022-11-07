@@ -55,7 +55,7 @@
                                             <div>
                                                 <div>{{approver.name}}({{approver.id}})<span class="workTime___PJH95">{{approver.time}}</span></div>
                                                 <div class="approverOpinion___3xcsE"><span
-                                                        style="color: rgb(135, 208, 104);">已同意</span><span>(文本测试)</span></div>
+                                                        style="color: rgb(135, 208, 104);">已同意</span><span>(紧急联系人只能是父母亲并要实名，如果无特殊理由，外出时长不超过8小时，返校时间不晚于20:30分后。不要乘坐任何形式的公共交通工具，返校后及时回寝销假。)</span></div>
                                             </div>
                                         </div>
                                     </div>
